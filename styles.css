@@ -88,14 +88,22 @@ label {
     display: block;
 }
 input {
+    border: none; /* Removes the default border */
+    border-radius: 2px; /* Adds rounded corners */
+    box-sizing: border-box; /* Makes sure padding doesn't increase the total width */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a drop shadow */
+    border-color: #b9b9b9;
+
     font-family: inherit;
     font-size: 1rem;
-    /* outline-color: var(--text-color); */
+    
     width: 20rem;
     padding: 0.25rem;
+    border-width: .25px;
+    border-style: solid;
 }
 input:focus {
-    outline-color: #6791e5;
+    outline-color: #5080df;
     /* color: #6791e5; */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
